@@ -4,36 +4,52 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --open --mode development",
-    "build": "webpack --mode production",
-    "lint": "eslint src/."
+    "start": "webpack-dev-server --config=config/webpack.dev.js --hot --open --inline",
+    "build": "webpack --config=config/webpack.prod.js",
+    "lint": "eslint --ext .ts,.tsx ./src"
   },
   "eslintIgnore": [
-    "webpack.config.js"
+    "config/"
   ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "@babel/preset-react": "^7.9.4",
-    "babel-loader": "^8.1.0",
+    "@testing-library/react": "^10.0.2",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.2.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@types/qs": "^6.9.1",
+    "@types/styled-components": "^5.1.0",
+    "axios": "^0.19.2",
+    "dotenv-webpack": "^1.7.0",
+    "prop-types": "^15.7.2",
+    "qa": "0.0.1",
+    "qs": "^6.9.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "prop-types": "^15.7.2"
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.0"
   }
 }
