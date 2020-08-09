@@ -10,6 +10,7 @@ let searchDelay: number
 function Home(): JSX.Element {
   const search = async (value: string): Promise<void> => {
     const data = await getSearch(value, 'album', 10)
+    console.log(data)
   }
 
   const handleSearch: (e: React.ChangeEvent<HTMLInputElement>) => void = e => {

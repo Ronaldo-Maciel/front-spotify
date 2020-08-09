@@ -62,13 +62,14 @@ export function getTokenInfo(): { token: string; expiry: number } {
 }
 
 export async function validateToken(): Promise<void> {
-  const { token, expiry } = getTokenInfo()
+  const tokenInfo = getTokenInfo()
 
-  if (!token) {
+  if (Object.is(tokenInfo, null)) {
     await setTokenRequest()
     return
   }
 
+  const { expiry } = tokenInfo
   const currentDate = new Date()
 
   if (currentDate.getTime() > expiry) {
