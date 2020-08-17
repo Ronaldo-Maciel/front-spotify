@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardImage, CardContent } from '../layout/Card'
 import Text from '../layout/Text'
-import { Album } from '../../services/types'
+import { Album } from '../../types/types'
 
 function AlbumCard({ images, name, artists }: Album): JSX.Element {
   return (
