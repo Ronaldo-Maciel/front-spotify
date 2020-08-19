@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, CardImage, CardContent } from '../layout/Card'
-import Text from '../layout/Text'
+import { Card, CardImage, CardContent } from '../Card'
+import Text from '../Text'
 import { Album } from '../../types/types'
 
 function AlbumCard({ images, name, artists }: Album): JSX.Element {
@@ -12,10 +12,10 @@ function AlbumCard({ images, name, artists }: Album): JSX.Element {
         alt={name}
       />
       <CardContent>
-        <Text variant="h2">
+        <Text variant="h3" as="h4">
           {name}
         </Text>
-        <Text variant="subtitle" textColor="secondary">
+        <Text variant="body" textColor="secondary">
           {artists.map(artist => artist.name)}
         </Text>
       </CardContent>

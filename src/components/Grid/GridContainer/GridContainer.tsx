@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import sizes from '../../Theme/sizes/sizes'
+import sizes from '../../layout/Theme/sizes/sizes'
 
 const GridContainer = styled.div`
   width: 100%;

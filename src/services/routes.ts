@@ -1,9 +1,8 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import axios from 'axios'
 import { validateToken, getTokenInfo } from './validateToken'
-// import { Album, Music, Artist } from './types'
 
-type Request = Promise<object[]>
+type Request = Promise<{albums: any}>
 
 async function getFromAPi(path: string): Request {
   try {

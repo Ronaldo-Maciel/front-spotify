@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import colors from '../../Theme/colors/colors'
-import sizes from '../../Theme/sizes/sizes'
+import colors from '../../layout/Theme/colors/colors'
+import sizes from '../../layout/Theme/sizes/sizes'
 
 const TextFieldStyle = styled.input`
   background-color: transparent;

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import sizes from '../../Theme/sizes/sizes'
 import getWidthGrid from '../helpers'
 import Props from './types'
+import sizes from '../../layout/Theme/sizes/sizes'
 
 const Column = styled.div<Props>`
   position: relative;

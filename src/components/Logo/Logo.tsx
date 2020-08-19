@@ -1,6 +1,6 @@
 import React from 'react'
 import LogoContainer from './style'
-import logo from '../../../assets/icons/logo.svg'
+import logo from '../../assets/icons/logo.svg'
 
 function Logo(): JSX.Element {
   return (

@@ -2,7 +2,7 @@ import React from 'react'
 import Text from '../Text'
 import Props from './types'
 import TextFieldStyle from './style'
-import colors from '../Theme/colors'
+import colors from '../layout/Theme/colors'
 
 function TextField({
   type,
